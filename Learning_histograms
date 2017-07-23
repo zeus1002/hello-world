@@ -1,17 +1,26 @@
-#standard imports
+#normal imports
+
 import numpy as np
 import pandas as pd 
 from numpy.random import randn
-#stat 
+
+#import the stats library from numpy
 from scipy import stats
+
+#plotting modules and libraries that we use
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+#command so that plots appear in jupyter notebook
 %matplotlib inline
+
 dataset_1=randn(100)
 plt.hist(dataset_1)
+
 dataset_2=randn(80)
 plt.hist(dataset_2,color='indianred')
+
 data1=randn(1000)
 data2=randn(1000)
 sns.jointplot(data1,data2)
